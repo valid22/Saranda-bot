@@ -13,7 +13,8 @@ token = os.getenv("DISCORD_BOT_TOKEN")
 print("token", token)
 
 DEFAULT_COGS = [
-    'verify'
+    'verify',
+    'stats'
 ]
 
 async def _load_cog(ctx, cog_name: str):
