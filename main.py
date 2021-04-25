@@ -54,7 +54,7 @@ async def _reload_cog(ctx, cog_name: str):
 
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.idle, activity=discord.Game("Listening to .help"))
+    await client.change_presence(status=discord.Status.idle, activity=discord.Game("Listening to !help"))
     logger.info("Saranda is alive and breathing...")
     logger.info(f"Loading default cogs: {', '.join(DEFAULT_COGS)}")
 
